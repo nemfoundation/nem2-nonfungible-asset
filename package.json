@@ -1,0 +1,49 @@
+{
+  "name": "nem2-nonfungible-asset",
+  "version": "0.1.0",
+  "description": "nem2 library to handle nonfungible assets in nem2 blockchain",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "js-sha3": "^0.7.0",
+    "nem2-sdk": "^0.10.0",
+    "rxjs": "^6.2.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.3",
+    "@types/mocha": "^5.2.0",
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.2",
+    "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
+    "ts-node": "^7.0.0",
+    "typemoq": "^2.1.0",
+    "typescript": "^2.9.2"
+  },
+  "scripts": {
+    "pretest": "npm run build",
+    "build": "rm -rf dist/ && tsc",
+    "test": "mocha --ui bdd --recursive ./dist/test",
+    "test:cov-html": "nyc --reporter=html npm t",
+    "test:coverage": "nyc --reporter=text-lcov npm t",
+    "report-coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nemfoundation/nem2-nonfungible-asset.git"
+  },
+  "author": "NEM Foundation",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nemfoundation/nem2-nonfungible-asset/issues"
+  },
+  "homepage": "https://github.com/nemfoundation/nem2-nonfungible-asset#readme",
+  "nyc": {
+    "exclude": [
+      "**/*.spec.js"
+    ]
+  }
+}
