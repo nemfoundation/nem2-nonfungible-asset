@@ -1,3 +1,9 @@
+# DEPRECATION NOTICE
+
+The ``nem2-nonfungible-asset`` package is no longer maintained.
+[NIP13](https://github.com/nemtech/NIP/blob/master/NIPs/nip-0013.md) defines a new standard for issuance and management of security tokens on Symbol.
+To continue using the project or advance its development, please create a custom fork.
+
 # nem2-nonfungible-asset
 
 [![npm version](https://badge.fury.io/js/nem2-nonfungible-asset.svg)](https://badge.fury.io/js/nem2-nonfungible-asset)
@@ -7,7 +13,7 @@
 [![Gitter chat](https://badges.gitter.im/nem2-libs/Lobby.svg)](https://gitter.im/nem2-libs/nem2-nonfungible-asset)
 
 
-:warning: experimental nem2 library for nonfungible-asset in nem2 blockchain. It will be submitted into [nemtech/NIP][nip] when it becomes more stable.
+Experimental nem2 library for nonfungible-asset in nem2 blockchain. It will be submitted into [nemtech/NIP][nip] when it becomes more stable.
 
 ## Abstract
 
